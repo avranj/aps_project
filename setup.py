@@ -10,7 +10,7 @@ def get_requirements()-> List[str]:
         requirement_list=requirement_file.readlines()
     requirement_list=[requirement_name.replace("\n","")for requirement_name in requirement_list]
 
-    if HYPEN_E_DOT in requirement_list:
+    if HYPHEN_E_DOT in requirement_list:
         requirement_list.remove(HYPEN_E_DOT)
     return  requirement_list     
         
